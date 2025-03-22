@@ -92,13 +92,12 @@ HCR/
  
 ---
 
-*Let's build smarter healthcare together!* 🌟  
 """
 )
 
 # [![Open in GitHub](https://img.shields.io/badge/GitHub-Repo-blue?logo=github)](https://github.com/Nuyoahwjl/HCR)  
 
-
+st.warning("Let's build smarter healthcare together! 🌟 ")
 
 
 
