@@ -151,7 +151,7 @@ llm = ChatDeepSeek(
         max_tokens=None,
         timeout=None,
         max_retries=2,
-        api_key="sk-ffc5fcb4ba8e4f96a646753274c0c0c4",
+        api_key="",
         # other params...
     )
 
