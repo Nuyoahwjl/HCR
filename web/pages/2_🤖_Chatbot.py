@@ -6,5 +6,4 @@ st.set_page_config(
 )
 
 st.chat_input("Please enter your question")
-st.chat_button("Send")
 st.chat_message("Hello! How can I help you today?")
