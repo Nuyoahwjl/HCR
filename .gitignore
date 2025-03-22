@@ -1,5 +1,5 @@
 # 忽略 .env 文件
-.env
+# .env
 
 # 忽略所有 __pycache__ 文件夹
 **/__pycache__/
