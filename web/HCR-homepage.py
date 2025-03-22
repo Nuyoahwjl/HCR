@@ -22,10 +22,7 @@ st.markdown("-------------")
 
 st.markdown(
 """
-# 🩺 Health Check Recommendation System  
-
 ![Project Architecture](https://placehold.co/800x200/009688/FFFFFF/png?text=AI+Health+Check+Assistant)  
-*A smart health checkup advisor powered by RAG and LLMs*
 
 ## 📖 Project Overview  
 This project is an intelligent **Health Check Recommendation System** that suggests personalized medical examination packages using:  
@@ -66,14 +63,14 @@ HCR/
 
 ## 🛠️ Tech Stack  
 
-| Component                | Technology                          |  
-|--------------------------|-------------------------------------|  
-| **Large Language Model** | DeepSeek API (Medical QA optimized) |  
-| **Framework**            | LangChain                           |  
-| **Vector Database**      | FAISS                               |  
-| **Frontend**             | Streamlit                           |  
-| **Embeddings**           | BAAI/bge-base-zh                    |  
-| **Environment**          | Python 3.12.9                       |  
+| Component                | Technology           |  
+|--------------------------|----------------------|  
+| **Large Language Model** | DeepSeek API         |  
+| **Framework**            | LangChain            |  
+| **Vector Database**      | FAISS                |  
+| **Frontend**             | Streamlit            |  
+| **Embeddings**           | BAAI/bge-base-zh     |  
+| **Environment**          | Python 3.12.9        |  
 
 ---
 

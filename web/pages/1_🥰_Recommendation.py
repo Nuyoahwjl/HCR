@@ -68,10 +68,10 @@ if submitted:
     with st.spinner("analyzing..."):
         # time.sleep(2)
         start = time.time()
-        # result = re.run_chain(user_info)
-        result = "## qqq"
-        with st.sidebar.expander(expanded=True):
-            st.success(f"successfully generate(time:{time.time()-start:.1f}s)")
+        result = re.run_chain(user_info)
+        # result = "## 你好"
+        with st.sidebar.expander(label=" ",expanded=True):
+            st.success(f"successfully(time:{time.time()-start:.1f}s)")
             st.write(user_info)
         with st.expander("Recommendations", expanded=True):
             st.markdown("## RECOMMENDATIONS")
