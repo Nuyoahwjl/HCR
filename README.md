@@ -1,0 +1,63 @@
+# Health Check Recommendation
+This project is a health check recommendation system built using LangChain, LangGraph, and DeepSeek LLM. It uses RAG technology to recommend health check packages based on user information.
+
+### 🗂️Folder Structure
+
+```
+HCR/
+├── config/
+│   └── settings.py
+│   └── .env
+├── data/
+│   ├── raw/
+│   │   ├──health_check_data.csv
+│   │   └──symptoms.pdf
+│   └── processed/
+├── vectordb/
+│   ├── vectorstore.py
+│   └── vector_db_1/
+│   └── vector_db_2/
+├── agent/
+│   ├── chain.py
+│   └── prompts.py
+│   └── utils.py
+├── test/
+├── web/
+│   ├── pages/
+│   │   └── 1_🥰_Recommendation.py
+│   └── HCR-homepage.py
+├── requirements.txt
+└── README.md
+```
+## 🚀How to Run
+
+1. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+2. Configure your DeepSeek API key:
+```py
+# HCR\config\..:
+echo "DEEPSEEK_API_KEY=your_api_key" > .env
+```
+3. Build Vector Store
+```bash
+python vectordb/vectorstore.py
+```
+4. Run the Streamlit app:
+```bash
+streamlit run app/main.py
+```
+
+## 💻Tech Stack
+
+| Component          | Technology Selection     |
+|--------------------|--------------------------|
+| Large Model        | DeepSeek API             |
+| Framework          | LangChain                |
+| Vector Database    | FAISS                    |
+| Frontend           | Streamlit                |
+| Text Embedding     | BAAI/bge-base-zh         |
+
+
+
