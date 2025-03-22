@@ -9,10 +9,8 @@ HCR/
 │   └── settings.py
 │   └── .env
 ├── data/
-│   ├── raw/
-│   │   ├──health_check_data.csv
-│   │   └──symptoms.pdf
-│   └── processed/
+│   ├──health_check_data.csv
+│   └──symptoms.pdf
 ├── vectordb/
 │   ├── vectorstore.py
 │   └── vector_db_1/
@@ -40,7 +38,7 @@ pip install -r requirements.txt
 # HCR\config\..:
 echo "DEEPSEEK_API_KEY=your_api_key" > .env
 ```
-3. Build Vector Store
+3. Build Vector Store:
 ```bash
 python vectordb/vectorstore.py
 ```
