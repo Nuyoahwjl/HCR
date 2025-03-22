@@ -7,7 +7,6 @@ This project is a health check recommendation system built using LangChain, and 
 HCR/
 ├── config/
 │   └── settings.py
-│   └── .env
 ├── data/
 │   ├──health_check_data.csv
 │   └──symptoms.pdf
@@ -34,16 +33,11 @@ HCR/
 ```bash
 pip install -r requirements.txt
 ```
-2. Configure your DeepSeek API key:
-```py
-# HCR\config\..:
-echo "DEEPSEEK_API_KEY=your_api_key" > .env
-```
-3. Build Vector Store:
+2. Build Vector Store:
 ```bash
 python vectordb/vectorstore.py
 ```
-4. Run the Streamlit app:
+3. Run the Streamlit app:
 ```bash
 streamlit run app/main.py
 ```
@@ -60,3 +54,10 @@ streamlit run app/main.py
 
 
 
+<!--
+2. Configure your DeepSeek API key:
+```py
+# HCR\config\..:
+echo "DEEPSEEK_API_KEY=your_api_key" > .env
+```
+-->
