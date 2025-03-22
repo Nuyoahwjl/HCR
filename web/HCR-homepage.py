@@ -95,7 +95,6 @@ HCR/
 *Let's build smarter healthcare together!* 🌟  
 
 [![Open in GitHub](https://img.shields.io/badge/GitHub-Repo-blue?logo=github)](https://github.com/Nuyoahwjl/HCR)  
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://health-check.streamlit.app/)
 """
 )
 
