@@ -61,19 +61,6 @@ HCR/
 
 ---
 
-## 🛠️ Tech Stack  
-
-| Component                | Technology           |  
-|--------------------------|----------------------|  
-| **Large Language Model** | DeepSeek API         |  
-| **Framework**            | LangChain            |  
-| **Vector Database**      | FAISS                |  
-| **Frontend**             | Streamlit            |  
-| **Embeddings**           | BAAI/bge-base-zh     |  
-| **Environment**          | Python 3.12.9        |  
-
----
-
 ## ✨ Key Features  
 - **Personalized Recommendations**  
   🔍 Analyzes user profile + medical history → suggests tailored checkup packages  
@@ -88,8 +75,21 @@ HCR/
   ✅ Powered by DeepSeek's medically-tuned LLM  
 
 - **User-Friendly Interface**  
-  💻 Streamlit web app with guided conversation flow  
+  💻 Streamlit web app with guided conversation flow 
 
+---
+
+## 🛠️ Tech Stack  
+
+| Component                | Technology           |  
+|--------------------------|----------------------|  
+| **Large Language Model** | DeepSeek API         |  
+| **Framework**            | LangChain            |  
+| **Vector Database**      | FAISS                |  
+| **Frontend**             | Streamlit            |  
+| **Embeddings**           | BAAI/bge-base-zh     |  
+| **Environment**          | Python 3.12.9        |  
+ 
 ---
 
 *Let's build smarter healthcare together!* 🌟  
