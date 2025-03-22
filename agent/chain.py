@@ -20,14 +20,14 @@ from langchain_deepseek import ChatDeepSeek
 import agent.utils as utils
 
 class RecommendationChain:
-    def __init__(self):
+    def __init__(self, deepseek_api_key):
         self.llm = ChatDeepSeek(
             model="deepseek-chat",
             temperature=0,
             max_tokens=None,
             timeout=None,
             max_retries=2,
-            api_key=Config.DEEPSEEK_API_KEY,
+            api_key=deepseek_api_key,
             # other params...
         )
 
