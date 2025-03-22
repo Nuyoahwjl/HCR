@@ -10,8 +10,6 @@ from agent.chain import RecommendationChain
 import time
 
 
-re=RecommendationChain()
-
 
 def format_user_info(gender, age, height, weight, medical_history, symptoms):
     """格式化用户信息"""
@@ -29,6 +27,13 @@ st.set_page_config(
     page_title="Recommend",
     page_icon="🥰",
 )
+
+def get_api( ):
+    api = st.chat_input("Please input your deepseek api key")
+    return api
+
+re=RecommendationChain(get_api())
+
 # st.sidebar.header("This project is a health check recommendation "
 #                   "system built using LangChain, LangGraph, and DeepSeek LLM. "
 #                   "It uses RAG technology to recommend health check packages based on user information.")
