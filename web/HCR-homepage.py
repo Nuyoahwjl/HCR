@@ -74,31 +74,6 @@ HCR/
 
 ---
 
-## 🚀 Quick Start  
-
-### 1. Installation  
-```bash 
-pip install -r requirements.txt
-```
-
-### 2. Configuration  
-```python
-# Set API key in .env file
-echo "DEEPSEEK_API_KEY=your_api_key" > config/.env
-```
-
-### 3. Build Vector Database  
-```bash
-python vectordb/vectorstore.py  # Creates FAISS indexes from medical data
-```
-
-### 4. Launch Application  
-```bash
-streamlit run web/HCR-homepage.py  # Starts the Streamlit interface
-```
-
----
-
 ## ✨ Key Features  
 - **Personalized Recommendations**  
   🔍 Analyzes user profile + medical history → suggests tailored checkup packages  
@@ -120,7 +95,7 @@ streamlit run web/HCR-homepage.py  # Starts the Streamlit interface
 *Let's build smarter healthcare together!* 🌟  
 
 [![Open in GitHub](https://img.shields.io/badge/GitHub-Repo-blue?logo=github)](https://github.com/Nuyoahwjl/HCR)  
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-url.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://health-check.streamlit.app/)
 """
 )
 
