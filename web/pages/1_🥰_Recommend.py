@@ -9,7 +9,9 @@ import pandas as pd
 from agent.chain import RecommendationChain
 import time
 
+
 re=RecommendationChain()
+
 
 def format_user_info(gender, age, height, weight, medical_history, symptoms):
     """格式化用户信息"""
