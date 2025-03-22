@@ -26,7 +26,7 @@ def format_user_info(gender, age, height, weight, medical_history, symptoms):
 
 # 界面布局
 st.set_page_config(
-    page_title="Recommendation",
+    page_title="Recommend",
     page_icon="🥰",
 )
 # st.sidebar.header("This project is a health check recommendation "

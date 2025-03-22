@@ -53,7 +53,7 @@ HCR/
 │   └── prompts.py             # LLM prompt templates
 ├── web/                       
 │   ├── pages/                 # Streamlit pages
-│   │   └── 1_🥰_Recommendation.py  
+│   │   └── 1_🥰_Recommend.py  
 │   │   └── 2_🏥_Hospitals.py
 │   └── HCR-homepage.py        # Main app
 └── requirements.txt           # Dependencies
