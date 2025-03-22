@@ -35,8 +35,8 @@ class RecommendationChain:
             # model_name = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
             # model_name = "hfl/chinese-bert-wwm-ext",
             model_name = "BAAI/bge-base-zh-v1.5",
-            model_kwargs = {'device': 'cuda'},
-            # model_kwargs = {'device': 'cpu'},
+            # model_kwargs = {'device': 'cuda'},
+            model_kwargs = {'device': 'cpu'},
             encode_kwargs = {'normalize_embeddings': True}
         )
         # self.vectorstore1 = Chroma(
