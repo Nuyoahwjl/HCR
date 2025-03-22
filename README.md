@@ -1,5 +1,5 @@
 # Health Check Recommendation
-This project is a health check recommendation system built using LangChain, LangGraph, and DeepSeek LLM. It uses RAG technology to recommend health check packages based on user information.
+This project is a health check recommendation system built using LangChain, and DeepSeek LLM. It uses RAG technology to recommend health check packages based on user information.
 
 ### 🗂️Folder Structure
 
@@ -23,6 +23,7 @@ HCR/
 ├── web/
 │   ├── pages/
 │   │   └── 1_🥰_Recommendation.py
+│   │   └── 2_🏥_Hospitals.py
 │   └── HCR-homepage.py
 ├── requirements.txt
 └── README.md
