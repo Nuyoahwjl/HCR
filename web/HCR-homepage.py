@@ -40,7 +40,6 @@ Designed to bridge medical knowledge with individual needs through AI-powered an
 HCR/
 ├── config/                    
 │   └── settings.py            # Project settings
-│   └── .env                   # API keys
 ├── data/                     
 │   ├── health_check_data.csv  # Checkup packages
 │   └── symptoms.pdf           # Symptom database
