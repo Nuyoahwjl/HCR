@@ -22,7 +22,7 @@ HCR/
 ├── test/
 ├── web/
 │   ├── pages/
-│   │   └── 1_🥰_Recommendation.py
+│   │   └── 1_🥰_Recommend.py
 │   │   └── 2_🏥_Hospitals.py
 │   └── HCR-homepage.py
 ├── requirements.txt
