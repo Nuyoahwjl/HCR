@@ -9,6 +9,6 @@ class Config:
     VECTORSTORE1_PATH = "/vectordb/vector_db_1"
     VECTORSTORE2_PATH = "/vectordb/vector_db_2"
     DATA = {
-        "csv": "/data/raw/health_check_data.csv",
-        "pdf": "/data/raw/symptoms.pdf"
+        "csv": "/data/health_check_data.csv",
+        "pdf": "/data/symptoms.pdf"
     }
