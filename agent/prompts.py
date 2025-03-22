@@ -21,7 +21,7 @@ RECOMMEND_PROMPT = ChatPromptTemplate.from_template(
     - 症状：{symptoms}
     </用户信息>
 
-    请按以下格式输出为markdown且不要有总结语，排版要整齐，可以加入emoji等美观的元素：
+    请按以下格式输出且不要有总结语，排版要整齐，可以加入emoji等美观的元素：
     1. 推荐项目：按优先级列出4-6个项目
     2. 推荐理由：结合用户情况说明
     3. 注意事项：检查前准备事项
