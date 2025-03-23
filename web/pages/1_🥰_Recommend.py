@@ -47,37 +47,31 @@ with col2:
     weight = st.slider("Weight(kg)", 0, 100, 0)
 medical_history = st.text_area("Medical History", key="medical", height=100)
 symptoms = st.text_area("Symptoms", key="symptoms", height=100)
-submitted = st.button("Recommend")
+submitted = st.button("Recommend", icon='✔️', use_container_width=True)
 
 
 DeepSeek_API = st.sidebar.text_input("DeepSeek API Key", type="password")
 if not DeepSeek_API.startswith("sk-"):
-    st.warning("Please enter your OpenAI API key!", icon="⚠")
+    st.warning("Please enter your OpenAI API key!", icon="⚠️")
 else:
     re = RecommendationChain(DeepSeek_API)
-
-
-if submitted:
-    if height == 50 or age ==0 or weight ==0 or not medical_history.strip() or not symptoms.strip():
-        st.error("Please fill in all the information", icon="🚨")
-        # st.toast("Please fill in all the information", icon="🚨")
-    else:
-        user_info = format_user_info(gender, age, height, weight, medical_history, symptoms)
-        with st.spinner("analyzing..."):
-            start = time.time()
-            # result = re.run_chain(user_info)
-            result = "## 你好"
-            with st.sidebar.expander(label=" ",expanded=True):
-                st.success(f"successfully(time:{time.time()-start:.1f}s)")
-                st.write(user_info)
-            with st.expander("Recommendations", expanded=True):
-                st.markdown("## RECOMMENDATIONS")
-                st.write(result)
-                st.download_button(
-                    label="download",
-                    data=result,
-                    file_name="Recommendations.md",
-                )
+    if submitted:
+        if height == 50 or age ==0 or weight ==0 or not medical_history.strip() or not symptoms.strip():
+            st.error("Please fill in all the information", icon="🚨")
+            # st.toast("Please fill in all the information", icon="🚨")
+        else:
+            user_info = format_user_info(gender, age, height, weight, medical_history, symptoms)
+            with st.spinner("analyzing..."):
+                start = time.time()
+                result = re.run_chain(user_info)
+                # result = "## 你好"
+                with st.sidebar.expander(label=" ",expanded=True):
+                    st.success(f"successfully(time:{time.time()-start:.1f}s)")
+                    st.write(user_info)
+                with st.expander("Recommendations", expanded=True):
+                    st.markdown("## RECOMMENDATIONS")
+                    st.write(result)
+                    st.download_button(label="download", data=result, file_name="Recommendations.md")
     
 
 
