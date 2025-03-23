@@ -34,7 +34,8 @@ st.set_page_config(
 #                   "system built using LangChain, LangGraph, and DeepSeek LLM. "
 #                   "It uses RAG technology to recommend health check packages based on user information.")
 st.title("🩺Health Check Recommendation")
-st.markdown("![](https://readme-typing-svg.herokuapp.com?color=000000FF&center=true&vCenter=true&width=800&lines=Hi+there+👋,+Welcome+to+HCR!;Please+fill+in+the+following+information+to+get+the+recommendation.+;)")
+# st.markdown("![](https://readme-typing-svg.herokuapp.com?color=000000FF&center=true&vCenter=true&width=800&lines=Hi+there+👋,+Welcome+to+HCR!;Please+fill+in+the+following+information+to+get+the+recommendation.+;)")
+st.markdown("![](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=450&pause=1000&color=000000&center=true&vCenter=true&width=800&lines=Hi+there+👋,+Welcome+to+HCR!;Fill+in+the+following+information+to+get+the+recommendation.)")
 
 # with st.form("user_info"):
     # gender = st.selectbox("性别", ["男", "女"])
