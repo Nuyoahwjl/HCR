@@ -10,9 +10,6 @@ from agent.chain import RecommendationChain
 import time
 
 
-re=RecommendationChain()
-
-
 def format_user_info(gender, age, height, weight, medical_history, symptoms):
     """格式化用户信息"""
     return {
@@ -51,6 +48,13 @@ with col2:
 medical_history = st.text_area("Medical History", key="medical", height=100)
 symptoms = st.text_area("Symptoms", key="symptoms", height=100)
 submitted = st.button("Recommend")
+
+
+DeepSeek_API = st.sidebar.text_input("DeepSeek API Key", type="password")
+if not DeepSeek_API.startswith("sk-"):
+    st.warning("Please enter your OpenAI API key!", icon="⚠")
+else:
+    re = RecommendationChain(DeepSeek_API)
 
 
 if submitted:

@@ -105,7 +105,7 @@ st.warning("Let's build smarter healthcare together! 🌟 ")
 
 
 with st.sidebar:
-    st.success("Select one page above.")
+    st.success("Select one page above")
     # st.markdown("Created by [Chia.le](https://github.com/Nuyoahwjl)")
     # st.markdown("Contact me [📮](chia.le@foxmail.com)")
     # st.markdown(
