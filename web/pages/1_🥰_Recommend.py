@@ -72,10 +72,10 @@ if submitted:
             with st.sidebar.expander(label="TEST",expanded=True):
                 st.success(f"successfully(time:{time.time()-start:.1f}s)")
                 st.write(user_info)
-            with st.expander("Recommendations", expanded=True):
+            with st.expander(" ", expanded=True):
                 st.markdown("## RECOMMENDATIONS")
                 st.write(result)
-                st.download_button(label="download", data=result, file_name="Recommendations.md")
+                st.download_button(label="download", data=result, file_name="Recommendations.md", use_container_width=True, icon="📥")
     
 
 
