@@ -38,7 +38,7 @@ re = RecommendationChain()
 
 st.markdown("""
 <div style="text-align: center;">
-    <h1>🩺Health Check Recommendation</h1>
+    <h2>🩺Health Check Recommendation</h2>
 </div>
 """, unsafe_allow_html=True)
 st.markdown("""
