@@ -78,19 +78,76 @@ HCR/
 
 ## 🛠️ Tech Stack  
 
-| Component                | Technology           |  
-|--------------------------|----------------------|  
-| **Large Language Model** | DeepSeek API         |  
-| **Framework**            | LangChain            |  
-| **Vector Database**      | FAISS                |  
-| **Frontend**             | Streamlit            |  
-| **Embeddings**           | BAAI/bge-base-zh     |  
-| **Environment**          | Python 3.12.9        |  
- 
----
-
 """
 )
+
+st.markdown("""
+<div style="margin: 20px 0;">
+<style>
+.tech-table {
+    width: 100% !important;
+    border-collapse: collapse;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.tech-table th {
+    background-color: #f8f9fa;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #dee2e6;
+}
+.tech-table td {
+    padding: 12px;
+    border-bottom: 1px solid #dee2e6;
+}
+.tech-table tr:hover {
+    background-color: #f1f1f1;
+}
+@media screen and (max-width: 600px) {
+    .tech-table {
+        font-size: 14px;
+    }
+    .tech-table td, .tech-table th {
+        padding: 8px;
+    }
+}
+</style>
+
+<table class="tech-table">
+    <tr>
+        <th>Component</th>
+        <th>Technology</th>
+    </tr>
+    <tr>
+        <td><strong>Large Language Model</strong></td>
+        <td>DeepSeek API</td>
+    </tr>
+    <tr>
+        <td><strong>Framework</strong></td>
+        <td>LangChain</td>
+    </tr>
+    <tr>
+        <td><strong>Vector Database</strong></td>
+        <td>FAISS</td>
+    </tr>
+    <tr>
+        <td><strong>Frontend</strong></td>
+        <td>Streamlit</td>
+    </tr>
+    <tr>
+        <td><strong>Embeddings</strong></td>
+        <td>BAAI/bge-base-zh</td>
+    </tr>
+    <tr>
+        <td><strong>Environment</strong></td>
+        <td>Python 3.12.9</td>
+    </tr>
+</table>
+</div>
+""", unsafe_allow_html=True)
+
+st.markdown("-------------")
 
 # [![Open in GitHub](https://img.shields.io/badge/GitHub-Repo-blue?logo=github)](https://github.com/Nuyoahwjl/HCR)  
 
@@ -104,6 +161,24 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 
+
+
+
+
+
+
+# st.markdown("""
+# 🛠️ Tech Stack  
+# | Component                | Technology           |  
+# |--------------------------|----------------------|  
+# | **Large Language Model** | DeepSeek API         |  
+# | **Framework**            | LangChain            |  
+# | **Vector Database**      | FAISS                |  
+# | **Frontend**             | Streamlit            |  
+# | **Embeddings**           | BAAI/bge-base-zh     |  
+# | **Environment**          | Python 3.12.9        |            
+# ---          
+# """)
 
 
 
