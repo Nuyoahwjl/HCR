@@ -83,44 +83,7 @@ HCR/
 
 st.markdown("""
 <div style="margin: 20px 0;">
-<style>
-.tech-table {
-    width: 100% !important;
-    table-layout: fixed;  /* 关键属性 */
-    border-collapse: collapse;
-    margin: auto;
-    font-family: Arial, sans-serif;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-}
-.tech-table th,
-.tech-table td {
-    width: 50% !important;  /* 强制等宽 */
-    padding: 12px;
-    text-align: left;
-    border-bottom: 2px solid #dee2e6;
-    word-break: break-word;  /* 长文本换行 */
-    box-sizing: border-box;  /* 包含padding计算宽度 */
-}
-.tech-table th {
-    background-color: #f8f9fa;
-    border-bottom-width: 2px;
-}
-.tech-table tr:hover {
-    background-color: #f1f1f1;
-}
-@media screen and (max-width: 600px) {
-    .tech-table {
-        font-size: 14px;
-    }
-    .tech-table td, 
-    .tech-table th {
-        padding: 8px;
-        display: table-cell; /* 保持表格布局 */
-    }
-}
-</style>
-
-<table class="tech-table">
+<table>
     <colgroup>
         <col style="width: 50%;">
         <col style="width: 50%;">
