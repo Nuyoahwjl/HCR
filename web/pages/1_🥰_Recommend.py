@@ -53,8 +53,8 @@ symptoms = st.text_area("Symptoms", key="symptoms", height=100)
 submitted = st.button("Recommend", icon='✔️', use_container_width=True)
 
 
-with st.sidebar.expander(label=" ",expanded=True):
-    DeepSeek_API = st.sidebar.text_input("DeepSeek API Key", type="password")
+with st.sidebar.expander(label="TEST",expanded=False):
+    DeepSeek_API = st.text_input("DeepSeek API Key", type="password")
     if not DeepSeek_API.startswith("sk-"):
         st.warning("Please enter your DeepSeek API key!", icon="⚠️")
 
