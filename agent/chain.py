@@ -20,16 +20,16 @@ from langchain_deepseek import ChatDeepSeek
 import agent.utils as utils
 
 class RecommendationChain:
-    def __init__(self):
-        # self.llm = ChatDeepSeek(
-        #     model="deepseek-chat",
-        #     temperature=0,
-        #     max_tokens=None,
-        #     timeout=None,
-        #     max_retries=2,
-        #     api_key=api_key,
-        #     # other params...
-        # )
+    def __init__(self, api_key):
+        self.llm = ChatDeepSeek(
+            model="deepseek-chat",
+            temperature=0,
+            max_tokens=None,
+            timeout=None,
+            max_retries=2,
+            api_key=api_key,
+            # other params...
+        )
 
         embeddings=HuggingFaceEmbeddings(
             # model_name = "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
@@ -58,16 +58,16 @@ class RecommendationChain:
             allow_dangerous_deserialization=True
         )
 
-    def init_llm(self, api_key):
-        self.llm = ChatDeepSeek(
-            model="deepseek-chat",
-            temperature=0,
-            max_tokens=None,
-            timeout=None,
-            max_retries=2,
-            api_key=api_key,
-            # other params...
-        )
+    # def init_llm(self, api_key):
+    #     self.llm = ChatDeepSeek(
+    #         model="deepseek-chat",
+    #         temperature=0,
+    #         max_tokens=None,
+    #         timeout=None,
+    #         max_retries=2,
+    #         api_key=api_key,
+    #         # other params...
+    #     )
 
     def build_chain(self):
         # retriever1 = self.vectorstore1.as_retriever(search_kwargs={"k": 3})

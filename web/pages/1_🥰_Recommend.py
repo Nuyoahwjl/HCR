@@ -54,8 +54,8 @@ DeepSeek_API = st.sidebar.text_input("DeepSeek API Key", type="password")
 if not DeepSeek_API.startswith("sk-"):
     st.warning("Please enter your DeepSeek API key!", icon="⚠️")
 else:
-    re = RecommendationChain()
-    re.init_llm(api_key=DeepSeek_API)
+    re = RecommendationChain(api_key=DeepSeek_API)
+    # re.init_llm(api_key=DeepSeek_API)
     if submitted:
         if height == 50 or age ==0 or weight ==0 or not medical_history.strip() or not symptoms.strip():
             st.error("Please fill in all the information", icon="🚨")
