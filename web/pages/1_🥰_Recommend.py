@@ -56,7 +56,7 @@ submitted = st.button("Recommend", icon='✔️', use_container_width=True)
 with st.sidebar.expander(label="TEST",expanded=False):
     DeepSeek_API = st.text_input("DeepSeek API Key", type="password")
     if not DeepSeek_API.startswith("sk-"):
-        st.warning("Please enter your DeepSeek API key!", icon="⚠️")
+        st.warning("Please enter API!", icon="⚠️")
 
 
 if submitted:
@@ -69,7 +69,7 @@ if submitted:
             start = time.time()
             result = re.run_chain(user_info)
             # result = "## 你好"
-            with st.sidebar.expander(label=" ",expanded=True):
+            with st.sidebar.expander(label="TEST",expanded=True):
                 st.success(f"successfully(time:{time.time()-start:.1f}s)")
                 st.write(user_info)
             with st.expander("Recommendations", expanded=True):
