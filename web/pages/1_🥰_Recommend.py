@@ -29,6 +29,9 @@ st.set_page_config(
 )
 
 
+re = RecommendationChain()
+
+
 st.title("🩺Health Check Recommendation")
 st.markdown("![](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=450&pause=1000&color=000000&center=true&vCenter=true&width=800&lines=Hi+there+👋,+Welcome+to+HCR!;Fill+in+the+following+information+to+get+the+recommendation.)")
 
@@ -50,29 +53,29 @@ symptoms = st.text_area("Symptoms", key="symptoms", height=100)
 submitted = st.button("Recommend", icon='✔️', use_container_width=True)
 
 
-DeepSeek_API = st.sidebar.text_input("DeepSeek API Key", type="password")
-if not DeepSeek_API.startswith("sk-"):
-    st.warning("Please enter your DeepSeek API key!", icon="⚠️")
-else:
-    re = RecommendationChain(api_key=DeepSeek_API)
-    # re.init_llm(api_key=DeepSeek_API)
-    if submitted:
-        if height == 50 or age ==0 or weight ==0 or not medical_history.strip() or not symptoms.strip():
-            st.error("Please fill in all the information", icon="🚨")
-            # st.toast("Please fill in all the information", icon="🚨")
-        else:
-            user_info = format_user_info(gender, age, height, weight, medical_history, symptoms)
-            with st.spinner("analyzing..."):
-                start = time.time()
-                result = re.run_chain(user_info)
-                # result = "## 你好"
-                with st.sidebar.expander(label=" ",expanded=True):
-                    st.success(f"successfully(time:{time.time()-start:.1f}s)")
-                    st.write(user_info)
-                with st.expander("Recommendations", expanded=True):
-                    st.markdown("## RECOMMENDATIONS")
-                    st.write(result)
-                    st.download_button(label="download", data=result, file_name="Recommendations.md")
+with st.sidebar.expander(label=" ",expanded=True):
+    DeepSeek_API = st.sidebar.text_input("DeepSeek API Key", type="password")
+    if not DeepSeek_API.startswith("sk-"):
+        st.warning("Please enter your DeepSeek API key!", icon="⚠️")
+
+
+if submitted:
+    if height == 50 or age ==0 or weight ==0 or not medical_history.strip() or not symptoms.strip():
+        st.error("Please fill in all the information", icon="🚨")
+        # st.toast("Please fill in all the information", icon="🚨")
+    else:
+        user_info = format_user_info(gender, age, height, weight, medical_history, symptoms)
+        with st.spinner("analyzing..."):
+            start = time.time()
+            result = re.run_chain(user_info)
+            # result = "## 你好"
+            with st.sidebar.expander(label=" ",expanded=True):
+                st.success(f"successfully(time:{time.time()-start:.1f}s)")
+                st.write(user_info)
+            with st.expander("Recommendations", expanded=True):
+                st.markdown("## RECOMMENDATIONS")
+                st.write(result)
+                st.download_button(label="download", data=result, file_name="Recommendations.md")
     
 
 
@@ -81,26 +84,26 @@ else:
 
 
 
-
-
-# st.balloons()
-# st.link_button(
-#     label="Streamlit 文档",
-#     url="https://docs.streamlit.io",
-#     help="查看官方文档",
-#     type="primary"
-# )
-# data = pd.DataFrame({"A": [1, 2], "B": [3, 4]})
-# csv_data = data.to_csv(index=False).encode("utf-8")
-# st.download_button(
-#     label="下载CSV",
-#     data=csv_data,
-#     file_name="dynamic_data.csv",
-#     mime="text/csv"
-# )
-# code = '''def hello():
-#             print("Hello, Streamlit!")'''
-# st.code(code, language="python")
-
-# st.time_input("选择时间")
-# st.date_input("选择日期")
+# DeepSeek_API = st.sidebar.text_input("DeepSeek API Key", type="password")
+# if not DeepSeek_API.startswith("sk-"):
+#     st.warning("Please enter your DeepSeek API key!", icon="⚠️")
+# else:
+#     re = RecommendationChain(api_key=DeepSeek_API)
+#     # re.init_llm(api_key=DeepSeek_API)
+#     if submitted:
+#         if height == 50 or age ==0 or weight ==0 or not medical_history.strip() or not symptoms.strip():
+#             st.error("Please fill in all the information", icon="🚨")
+#             # st.toast("Please fill in all the information", icon="🚨")
+#         else:
+#             user_info = format_user_info(gender, age, height, weight, medical_history, symptoms)
+#             with st.spinner("analyzing..."):
+#                 start = time.time()
+#                 result = re.run_chain(user_info)
+#                 # result = "## 你好"
+#                 with st.sidebar.expander(label=" ",expanded=True):
+#                     st.success(f"successfully(time:{time.time()-start:.1f}s)")
+#                     st.write(user_info)
+#                 with st.expander("Recommendations", expanded=True):
+#                     st.markdown("## RECOMMENDATIONS")
+#                     st.write(result)
+#                     st.download_button(label="download", data=result, file_name="Recommendations.md")
