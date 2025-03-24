@@ -65,17 +65,17 @@ if submitted:
         # st.toast("Please fill in all the information", icon="🚨")
     else:
         user_info = format_user_info(gender, age, height, weight, medical_history, symptoms)
-        with st.spinner("analyzing...",show_time=True):
-            start = time.time()
-            result = re.run_chain(user_info)
-            # result = "## 你好"
-            with st.sidebar.expander(label="TEST",expanded=True):
-                st.success(f"successfully(time:{time.time()-start:.1f}s)")
-                st.write(user_info)
-            with st.expander("RECOMMENDATIONS", expanded=True):
-                st.markdown("## RECOMMENDATIONS")
-                st.write(result)
-                st.download_button(label="Download", data=result, file_name="Recommendations.md", use_container_width=True, icon="📥")
+        st.spinner("analyzing...",show_time=True)
+        start = time.time()
+        result = re.run_chain(user_info)
+        # result = "## 你好"
+        with st.sidebar.expander(label="TEST",expanded=True):
+            st.success(f"successfully(time:{time.time()-start:.1f}s)")
+            st.write(user_info)
+        with st.expander("RECOMMENDATIONS", expanded=True):
+            st.markdown("## RECOMMENDATIONS")
+            st.write(result)
+            st.download_button(label="Download", data=result, file_name="Recommendations.md", use_container_width=True, icon="📥")
     
 
 
