@@ -52,7 +52,7 @@ submitted = st.button("Recommend", icon='✔️', use_container_width=True)
 
 DeepSeek_API = st.sidebar.text_input("DeepSeek API Key", type="password")
 if not DeepSeek_API.startswith("sk-"):
-    st.warning("Please enter your OpenAI API key!", icon="⚠️")
+    st.warning("Please enter your DeepSeek API key!", icon="⚠️")
 else:
     re = RecommendationChain()
     re.init_llm(api_key=DeepSeek_API)
