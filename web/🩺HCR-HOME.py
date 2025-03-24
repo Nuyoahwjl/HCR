@@ -105,11 +105,11 @@ st.markdown("""
 }
 .tech-table th {
     border-bottom: 3px solid rgba(73, 80, 87, 0.8); /* 深色半透明边框 */
-    color: rgba(33, 37, 41, 0.9); /* 半透明文字 */
+
     font-weight: 600;
 }
 .tech-table td {
-    color: rgba(33, 37, 41, 0.8); /* 内容文字半透明 */
+    
 }
 @media screen and (max-width: 600px) {
     .tech-table {
