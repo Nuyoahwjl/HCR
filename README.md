@@ -22,7 +22,8 @@ HCR/
 ├── web/
 │   ├── pages/
 │   │   └── 1_🥰_Recommend.py
-│   │   └── 2_🏥_Hospitals.py
+│   │   └── 2_🤖_Chatbot.py
+│   │   └── 3_🏥_Hospitals.py
 │   └── HCR-HOME.py
 ├── requirements.txt
 └── README.md
