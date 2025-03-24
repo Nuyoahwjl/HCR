@@ -20,7 +20,7 @@ st.markdown("-------------")
 st.markdown("""
 <div style="text-align: center;">
     <img src="https://placehold.co/800x200/009688/FFFFFF/png?text=AI+Health+Check+Assistant&font=Lora" 
-         style="display: block; margin: auto; width: 100%; max-width: 800px;">
+         style="display: block; margin: auto; width: 100%;">
 </div>
 """, unsafe_allow_html=True)
 
