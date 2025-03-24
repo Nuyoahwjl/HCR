@@ -82,40 +82,43 @@ HCR/
 )
 
 st.markdown("""
-<div style="margin: 20px 0;">
+<div>
 <style>
 .tech-table {
     width: 100% !important;
-    table-layout: fixed;  /* 关键属性 */
+    table-layout: fixed;
     border-collapse: collapse;
     margin: auto;
     font-family: Arial, sans-serif;
+    background: transparent !important;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
 .tech-table th,
 .tech-table td {
-    width: 50% !important;  /* 强制等宽 */
+    width: 50% !important;
     padding: 12px;
     text-align: left;
-    border-bottom: 2px solid #dee2e6;
-    word-break: break-word;  /* 长文本换行 */
-    box-sizing: border-box;  /* 包含padding计算宽度 */
+    border-bottom: 2px solid rgba(222, 226, 230, 0.5); /* 半透明边框 */
+    word-break: break-word;
+    box-sizing: border-box;
+    background: transparent !important;
 }
 .tech-table th {
-    background-color: #f8f9fa;
-    border-bottom-width: 2px;
+    border-bottom: 3px solid rgba(73, 80, 87, 0.8); /* 深色半透明边框 */
+    color: rgba(33, 37, 41, 0.9); /* 半透明文字 */
+    font-weight: 600;
 }
-.tech-table tr:hover {
-    background-color: #f1f1f1;
+.tech-table td {
+    color: rgba(33, 37, 41, 0.8); /* 内容文字半透明 */
 }
 @media screen and (max-width: 600px) {
     .tech-table {
         font-size: 14px;
+        box-shadow: none; /* 小屏幕移除阴影 */
     }
     .tech-table td, 
     .tech-table th {
         padding: 8px;
-        display: table-cell; /* 保持表格布局 */
     }
 }
 </style>
