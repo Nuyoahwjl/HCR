@@ -17,10 +17,17 @@ st.markdown(
 
 st.markdown("-------------")
 
+st.markdown("""
+<div style="text-align: center;">
+    <img src="https://placehold.co/800x200/009688/FFFFFF/png?text=AI+Health+Check+Assistant&font=Lora" 
+         style="display: block; margin: auto; width: 100%; max-width: 800px;">
+</div>
+""", unsafe_allow_html=True)
+
+# ![Project Architecture](https://placehold.co/800x200/009688/FFFFFF/png?text=AI+Health+Check+Assistant&font=Lora)
+
 st.markdown(
 """
-![Project Architecture](https://placehold.co/800x200/009688/FFFFFF/png?text=AI+Health+Check+Assistant&font=Lora)  
-
 ## 📖 Project Overview  
 This project is an intelligent **Health Check Recommendation System** that suggests personalized medical examination packages using:  
 - 🧠 **RAG (Retrieval-Augmented Generation) technology**  
