@@ -47,11 +47,12 @@ HCR/
 ├── agent/                     
 │   ├── chain.py               # LangChain workflows 
 │   └── prompts.py             # LLM prompt templates
-├── web/                       
+├── web/                                   
 │   ├── pages/                 # Streamlit pages
-│   │   └── 1_🥰_Recommend.py  
-│   │   └── 2_🏥_Hospitals.py
-│   └── HCR-homepage.py        # Main app
+│   │   └── 1_🥰_Recommend.py
+│   │   └── 2_🤖_Chatbot.py
+│   │   └── 3_🏥_Hospitals.py
+│   └── HCR-HOME.py            # Main app
 └── requirements.txt           # Dependencies
 ```
 
