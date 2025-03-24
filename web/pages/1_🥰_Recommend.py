@@ -38,12 +38,12 @@ re = RecommendationChain()
 
 st.markdown("""
 <div style="text-align: center;">
-    <h2>🩺Health Check Recommendation</h2>
+    <h2><b>🩺Health Check Recommendation🩺</b></h2>
 </div>
 """, unsafe_allow_html=True)
 st.markdown("""
 <div style="text-align: center;">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=450&pause=1000&color=FF4B4BFF&center=true&vCenter=true&width=800&lines=Hi+there+👋,+Welcome+to+HCR!;Fill+in+the+following+information+to+get+the+recommendation." 
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=550&pause=1000&color=FF4B4BFF&center=true&vCenter=true&width=800&lines=Hi+there+👋,+Welcome+to+HCR!;Fill+in+the+following+information+to+get+the+recommendation." 
          style="display: block; margin: auto; width: 100%;">
 </div>
 """, unsafe_allow_html=True)
