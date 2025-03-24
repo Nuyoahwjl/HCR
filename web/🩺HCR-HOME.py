@@ -105,11 +105,7 @@ st.markdown("""
 }
 .tech-table th {
     border-bottom: 3px solid rgba(73, 80, 87, 0.8); /* 深色半透明边框 */
-
     font-weight: 600;
-}
-.tech-table td {
-    
 }
 @media screen and (max-width: 600px) {
     .tech-table {
