@@ -65,7 +65,7 @@ if submitted:
         # st.toast("Please fill in all the information", icon="🚨")
     else:
         user_info = format_user_info(gender, age, height, weight, medical_history, symptoms)
-        with st.spinner("analyzing..."):
+        with st.spinner("analyzing...",show_time=True):
             start = time.time()
             result = re.run_chain(user_info)
             # result = "## 你好"
