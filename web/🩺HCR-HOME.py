@@ -17,13 +17,6 @@ st.markdown(
 
 st.markdown("-------------")
 
-st.markdown("""
-<div style="text-align: center;">
-    <img src="https://placehold.co/800x200/009688/FFFFFF/png?text=AI+Health+Check+Assistant&font=Lora" 
-         style="display: block; margin: auto; width: 100%;">
-</div>
-""", unsafe_allow_html=True)
-
 # ![Project Architecture](https://placehold.co/800x200/009688/FFFFFF/png?text=AI+Health+Check+Assistant&font=Lora)
 
 st.markdown(
@@ -103,6 +96,12 @@ HCR/
 
 st.warning("Let's build smarter healthcare together! 🌟 ")
 
+st.markdown("""
+<div style="text-align: center;">
+    <img src="https://placehold.co/800x200/009688/FFFFFF/png?text=AI+Health+Check+Assistant&font=Lora" 
+         style="display: block; margin: auto; width: 100%;">
+</div>
+""", unsafe_allow_html=True)
 
 
 
