@@ -23,7 +23,7 @@ HCR/
 │   ├── pages/
 │   │   └── 1_🥰_Recommend.py
 │   │   └── 2_🏥_Hospitals.py
-│   └── HCR-homepage.py
+│   └── HCR-HOME.py
 ├── requirements.txt
 └── README.md
 ```
