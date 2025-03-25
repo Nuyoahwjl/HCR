@@ -34,18 +34,21 @@ HCR/
 ```bash
 pip install -r requirements.txt
 ```
+2. Build Vector Store:
+```bash
+python vectordb/vectorstore.py
+```
+3. Run the Streamlit app:
+```bash
+streamlit run app/main.py
+```
+
+<!--
 2. Install faiss-cpu
 ```bash
 conda install pytorch::faiss-cpu=1.10.0
 ```
-3. Build Vector Store:
-```bash
-python vectordb/vectorstore.py
-```
-4. Run the Streamlit app:
-```bash
-streamlit run app/main.py
-```
+-->
 
 ## 💻Tech Stack
 
