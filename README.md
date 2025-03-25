@@ -36,7 +36,7 @@ pip install -r requirements.txt
 ```
 2. Install faiss-cpu
 ```bash
-conda install pytorch::faiss-cpu
+conda install pytorch::faiss-cpu=1.10.0
 ```
 3. Build Vector Store:
 ```bash
