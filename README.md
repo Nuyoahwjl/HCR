@@ -11,7 +11,7 @@
     ">⚠️该版本已弃用⚠️</div>
 -->
 
-# ⚠️该版本已弃用⚠️ 
+# 该版本已弃用
 
 ### ![🐬Powered by DeepSeek🐬](https://img.shields.io/badge/Powered_by-DeepSeek-0A0A0A?style=for-the-badge&logo=deepseek)
 
