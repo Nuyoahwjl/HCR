@@ -11,10 +11,10 @@
     ">⚠️该版本已弃用⚠️</div>
 -->
 
-# ⚠️该版本已弃用⚠️
+# ⚠️该版本已弃用⚠️ ![Powered by DeepSeek](https://img.shields.io/badge/Powered_by-DeepSeek-0A0A0A?style=for-the-badge&logo=deepseek)
 
 
-# Health Check Recommendation <--> ![Powered by DeepSeek](https://img.shields.io/badge/Powered_by-DeepSeek-0A0A0A?style=for-the-badge&logo=deepseek)
+# Health Check Recommendation 
 This project is a health check recommendation system built using LangChain, and DeepSeek LLM. It uses RAG technology to recommend health check packages based on user information.
 
 ### 🗂️Folder Structure
