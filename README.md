@@ -1,3 +1,4 @@
+<html>
 <div style="
     color:rgb(238, 22, 44);
     background-color: #f8d7da;
@@ -8,6 +9,7 @@
     font-weight: bold;
     display: inline-block;
     ">⚠️该版本已弃用⚠️</div>
+</html>
 
 ![Powered by DeepSeek](https://img.shields.io/badge/Powered_by-DeepSeek-0A0A0A?style=for-the-badge&logo=deepseek)
 
