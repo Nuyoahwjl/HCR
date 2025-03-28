@@ -13,12 +13,8 @@
 
 # ⚠️该版本已弃用⚠️
 
-<div style="display: flex; justify-content: space-between; align-items: center;">
-  <h1>Health Check Recommendation</h1>
-  <img src="https://img.shields.io/badge/Powered_by-DeepSeek-0A0A0A?style=for-the-badge&logo=deepseek">
-</div>
 
-# Health Check Recommendation                                     ![Powered by DeepSeek](https://img.shields.io/badge/Powered_by-DeepSeek-0A0A0A?style=for-the-badge&logo=deepseek)
+# Health Check Recommendation <--> ![Powered by DeepSeek](https://img.shields.io/badge/Powered_by-DeepSeek-0A0A0A?style=for-the-badge&logo=deepseek)
 This project is a health check recommendation system built using LangChain, and DeepSeek LLM. It uses RAG technology to recommend health check packages based on user information.
 
 ### 🗂️Folder Structure
