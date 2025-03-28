@@ -1,3 +1,14 @@
+<div style="
+    color:rgb(238, 22, 44);
+    background-color: #f8d7da;
+    padding: 12px;
+    border: 2px solid #f5c6cb;
+    border-radius: 10px;
+    margin: 10px 0;
+    font-weight: bold;
+    display: inline-block;
+    ">⚠️该版本已弃用⚠️</div>
+
 ![Powered by DeepSeek](https://img.shields.io/badge/Powered_by-DeepSeek-0A0A0A?style=for-the-badge&logo=deepseek)
 
 
@@ -66,7 +77,7 @@ conda install pytorch::faiss-cpu=1.10.0
 
 
 <!--
-2. Configure your DeepSeek API key:
+1. Configure your DeepSeek API key:
 ```py
 # HCR\config\..:
 echo "DEEPSEEK_API_KEY=your_api_key" > .env
