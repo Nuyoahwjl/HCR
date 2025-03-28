@@ -41,7 +41,7 @@ HCR/
 │   │   └── 1_🥰_Recommend.py
 │   │   └── 2_🤖_Chatbot.py
 │   │   └── 3_🏥_Hospitals.py
-│   └── HCR-HOME.py
+│   └── 🩺HCR-HOME.py
 ├── requirements.txt
 └── README.md
 ```
@@ -57,7 +57,7 @@ python vectordb/vectorstore.py
 ```
 3. Run the Streamlit app:
 ```bash
-streamlit run app/main.py
+streamlit run web/🩺HCR-HOME.py
 ```
 
 <!--
